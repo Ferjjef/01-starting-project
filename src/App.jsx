@@ -1,8 +1,8 @@
 import Header from './Header.jsx';
-import UserData from './UserData.jsx';
-import CoreConcept from './CoreConcept.jsx';
+import UserData from './assets/UserData.jsx';
+import CoreConcept from './components/CoreConcept/CoreConcept.jsx';
 import componentsImg  from './assets/components.png'
-import { CORE_CONCEPTS } from './data.js';
+import { CORE_CONCEPTS } from './assets/data.js';
 
 function getRandomInt(max){
   return Math.floor(Math.random()*(max+1));
@@ -10,6 +10,7 @@ function getRandomInt(max){
 function App() {
   return (
     <div>
+
       <Header />
       <main>
         <section id="core-concepts">
