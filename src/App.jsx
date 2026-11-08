@@ -1,36 +1,19 @@
-import Header from './Header.jsx';
-import UserData from './assets/UserData.jsx';
-import CoreConcept from './components/CoreConcept/CoreConcept.jsx';
-import componentsImg  from './assets/components.png'
-import { CORE_CONCEPTS } from './assets/data.js';
-
-function getRandomInt(max){
-  return Math.floor(Math.random()*(max+1));
-}
+//app
+import Header from './components/Header/Header.jsx';
+import CoreConcept from './components/CoreConcepts/CoreConcept.jsx';
+import { CORE_CONCEPTS, EXAMPLES } from './assets/data.js';
+import TabButton from './components/TabButton/TabButton.jsx';
+import { useState } from 'react';
+import CoreConcepts from './components/CoreConcepts/CoreConcepts.jsx';
 function App() {
   return (
-    <div>
-
+  <>
       <Header />
       <main>
-        <section id="core-concepts">
-        <h2>Time to get started!</h2>
-        <ul>
-          <CoreConcept {...CORE_CONCEPTS[0]} />
-          <CoreConcept {...CORE_CONCEPTS[1]} />
-          <CoreConcept {...CORE_CONCEPTS[2]} />
-          <CoreConcept {...CORE_CONCEPTS[3]} />
-        </ul>
-        </section>
+        <CoreConcepts/>
+        <Examples/>
       </main>
-    </div>
+  </>  
   );
 }
 export default App;
-
-
-//1. Create a User object wwith yourdata
-//  1. First,Last,Age
-//  2. Create a functional component to show this information
-//  3. Display this on the screen in a Div at the bottom
-//  4. export default App;
