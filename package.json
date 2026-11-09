@@ -15,5 +15,9 @@
     "vite": "^4.3.9"
   },
   "keywords": [],
-  "description": ""
+  "description": "",
+  "allowScripts": {
+    "esbuild@0.18.20": true,
+    "fsevents@2.3.3": true
+  }
 }
